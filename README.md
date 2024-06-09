@@ -24,7 +24,9 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+YouApp Assignment - Anuj Patil
+
+I was able to complete important elements of the task, and despite the fact that the assignment was too large for an interview, I made the most of my time by demonstrating some of my coding standards. While this assignment does not demonstrate my full capabilities as a founding engineer on several projects, I tried my best with the time I had. I hope for the best.
 
 ## Installation
 
