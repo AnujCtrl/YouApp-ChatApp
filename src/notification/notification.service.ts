@@ -23,6 +23,6 @@ export class NotificationService {
   }
 
   async sendNotification(message: any) {
-    return this.client.send({ cmd: 'new_message' }, message);
+    return this.client.send({ cmd: 'new_message_from' }, message);
   }
 }

@@ -1,12 +1,13 @@
 import { IsString } from 'class-validator';
+import { Types } from 'mongoose';
 
 export class SendMessageDto {
   @IsString()
-  fromUserId: string;
+  sender: Types.ObjectId['_id'];
 
   @IsString()
-  toUserId: string;
+  receiver: Types.ObjectId['_id'];
 
   @IsString()
-  message: string;
+  content: string;
 }

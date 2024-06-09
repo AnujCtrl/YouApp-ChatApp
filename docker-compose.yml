@@ -21,3 +21,10 @@ services:
     ports:
       - '5672:5672'
       - '15672:15672'
+  test:
+    container_name: chat-test
+    build: .
+    command: npm run test:e2e
+    depends_on:
+      - mongo
+      - rabbitmq

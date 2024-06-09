@@ -11,8 +11,8 @@ export class ChatController {
     return this.chatService.sendMessage(sendMessageDto);
   }
 
-  @Get('view/:id')
-  async viewMessages(@Param('id') id: string) {
-    return this.chatService.viewMessages(id);
+  @Get('view/:UserName')
+  async viewMessages(@Param('userName') userName: string) {
+    return this.chatService.viewMessages(userName);
   }
 }
