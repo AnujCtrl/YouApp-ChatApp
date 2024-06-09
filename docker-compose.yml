@@ -1,0 +1,23 @@
+version: '3'
+services:
+  app:
+    container_name: chat-app
+    build: .
+    ports:
+      - '3000:3000'
+    depends_on:
+      - mongo
+      - rabbitmq
+
+  mongo:
+    image: mongo
+    container_name: chat-mongo
+    ports:
+      - '27017:27017'
+
+  rabbitmq:
+    image: rabbitmq:management
+    container_name: chat-rabbitmq
+    ports:
+      - '5672:5672'
+      - '15672:15672'
